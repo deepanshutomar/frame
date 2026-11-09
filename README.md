@@ -24,6 +24,35 @@ and the footage first, then choose settings that keep the source's quality.
 
 <p align="center"><img src="docs/images/assets-flow.svg" alt="Need, licence facets, search APIs (Openverse first), audition, download and log in credits.json" width="100%"></p>
 
+## Find the right style and skill
+
+Two references ship with FRAME so you, or your agent, can pick a style and find an existing skill for the job:
+
+- **[Editing catalog](references/styles/editing-catalog.md):** about 77 sections on effects, techniques, transitions,
+  sound, colour, typography, creator frameworks (retention short-form, explainer, documentary…) and genre grammars.
+- **[skills.json](references/styles/skills.json)** (data) and **[repos.md](references/styles/repos.md)** (readable):
+  427 public video-editing skills and toolkits, with stars, licence and security grade.
+
+| Kind | id | Repos |
+|---|---|---|
+| 🧱 Frameworks & toolkits | `general` | 73 |
+| 📣 Promo & demos | `promo` | 82 |
+| 🎓 Explainers | `explainer` | 76 |
+| ✂️ Editing | `editing` | 54 |
+| 📱 Shorts & social | `shorts` | 52 |
+| 🧑‍💼 Avatars | `avatar` | 9 |
+| 📖 Stories & animation | `story` | 25 |
+| 🎞 Motion graphics | `motion` | 29 |
+| 📝 Scripts & learning | `craft` | 10 |
+| 🎵 Music videos | `music` | 17 |
+
+```bash
+jq -r '.skills[] | select(.kind=="editing" and .security_grade=="safe") | "\(.stars)\t\(.repo_full_name)"' references/styles/skills.json | sort -rn | head
+```
+
+Repo list snapshot: 2026-11-05, from [agentskillshub.top](https://agentskillshub.top/best/claude-video-skills/). Check a repo's licence before
+copying code: AGPL and unlicensed repos are for ideas only.
+
 ## What's inside
 
 ```
@@ -34,7 +63,8 @@ references/
   styles/
     styles.md             choosing an editing style, and how to borrow from other repos safely
     editing-catalog.md    master catalog of editing effects, techniques, creator frameworks (searched, not loaded)
-    repos.md              427 public video-skill repos by kind, with licence and security grade
+    skills.json           427 public video-skill repos as data: kind, stars, licence, security grade
+    repos.md              the same list as readable tables, one per kind
   fonts.md                font selection: always ask, specimen stills, script coverage, licences
   assets/
     README.md             where outside assets come from and the rules for using them

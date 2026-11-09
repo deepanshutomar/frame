@@ -5,7 +5,25 @@ This folder holds two big references. Don't read either of them whole.
 | File | What it is | How to read it |
 |---|---|---|
 | [editing-catalog.md](editing-catalog.md) | About 77 sections covering effects, techniques, creator frameworks, transitions, sound, colour, typography and genre grammars | Find the section you need with `grep -n "^#\{1,2\} [0-9]" editing-catalog.md`, then read only that section by its line range |
-| [repos.md](repos.md) | 427 public video-skill repos (Nov 2026 snapshot) by kind, with licence and security grade | Search it with `grep -i "<keyword>" repos.md` |
+| [skills.json](skills.json) | The same 427 repos as machine-readable data: `repo_full_name`, `path`, `stars`, `description`, `kind`, `security_grade`, `language`, `license`, plus the 10 `kinds` | Filter it with a query (below). This is the fastest way to find a skill for a job. |
+| [repos.md](repos.md) | A readable view of skills.json: one table per kind, sorted by stars | Browse on GitHub, or `grep -i "<keyword>" repos.md` |
+
+### Finding the right skill in skills.json
+
+Kinds: `general` (frameworks/toolkits), `promo`, `explainer`, `editing`, `shorts`, `avatar`, `story`, `motion`, `craft`
+(scripts and learning), `music`.
+
+```bash
+# safe, permissively licensed editing skills, most-starred first
+jq -r '.skills[] | select(.kind=="editing" and .security_grade=="safe" and (.license=="MIT" or .license=="Apache-2.0" or .license=="MIT-0"))
+       | "\(.stars)\t\(.repo_full_name)\t\(.description)"' skills.json | sort -rn | head -15
+
+# keyword search across all kinds
+jq -r '.skills[] | select((.description // "") | test("talking.head|caption"; "i")) | "\(.kind)\t\(.repo_full_name)\t\(.license)"' skills.json
+```
+
+Without `jq`: `python3 -c "import json;[print(s['stars'],s['repo_full_name']) for s in json.load(open('skills.json'))['skills'] if s['kind']=='shorts']"`.
+Repos with a `path` live in a subfolder: `https://github.com/<repo_full_name>/tree/HEAD/<path>`.
 
 ## 1. Pick a style for the content (before building anything)
 
@@ -36,7 +54,7 @@ delivery.md take priority** wherever they differ.
 
 ## 3. Borrowing from other repos
 
-[repos.md](repos.md) is a list of ideas, not things to install.
+[skills.json](skills.json) / [repos.md](repos.md) are a list of ideas, not things to install.
 
 - **Search by need:** `grep -i "talking-head\|caption\|kinetic" repos.md`, or check the kind headings (Editing, Shorts
   & social, Motion graphics, Explainers…).

@@ -39,8 +39,8 @@ Open a reference only at its step. Steps 1 and 2 are a few commands each and cos
 how quality drops without anyone noticing. Steps 3 and 5 apply only when the job involves styling or outside assets;
 a plain convert or cut skips them. Ask the step 3 questions in one message, together with any other questions.
 
-The big references (`styles/editing-catalog.md`, `styles/repos.md`) are searched with grep and read section by
-section, never loaded whole.
+The big references are searched, never loaded whole: `styles/editing-catalog.md` with grep, section by section;
+`styles/skills.json` with `jq` or Python to find a skill for a job (styles.md shows how).
 
 ## Hard rules
 
