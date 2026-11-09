@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="400" rx="16" fill="#0f1115"/>
+  <text x="48" y="58" font-size="28" font-weight="800" fill="#f5f6fa">Outside assets: licensed, logged, credited</text>
+  <text x="48" y="90" font-size="17" fill="#8d95a8">"Free to download" is not a licence. Nothing goes in the edit without a ledger entry.</text>
+  <g stroke="#3a4152" stroke-width="3"><path d="M246 210 H272"/><path d="M470 210 H496"/><path d="M694 210 H720"/><path d="M918 210 H944"/></g>
+  <g font-size="15">
+    <rect x="48" y="130" width="198" height="160" rx="14" fill="#161a23" stroke="#4dabf7" stroke-width="2"/>
+    <text x="68" y="166" font-size="20" font-weight="700" fill="#f5f6fa">Need</text>
+    <text x="68" y="196" fill="#8d95a8">"soft paper tear,</text><text x="68" y="218" fill="#8d95a8">under 1 s"</text><text x="68" y="248" fill="#8d95a8">"vertical street</text><text x="68" y="270" fill="#8d95a8">B-roll, 4K"</text>
+    <rect x="272" y="130" width="198" height="160" rx="14" fill="#161a23" stroke="#ffd43b" stroke-width="2"/>
+    <text x="292" y="166" font-size="20" font-weight="700" fill="#f5f6fa">Facets</text>
+    <text x="292" y="196" fill="#8d95a8">CC0 · BY · SA · NC</text><text x="292" y="218" fill="#8d95a8">commercial ✓</text><text x="292" y="240" fill="#8d95a8">modification ✓</text><text x="292" y="262" fill="#8d95a8">orientation · size</text>
+    <rect x="496" y="130" width="198" height="160" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="516" y="166" font-size="20" font-weight="700" fill="#f5f6fa">Search APIs</text>
+    <text x="516" y="196" fill="#8d95a8">Openverse (first)</text><text x="516" y="218" fill="#8d95a8">Freesound · Pexels</text><text x="516" y="240" fill="#8d95a8">Pixabay · Wikimedia</text><text x="516" y="262" fill="#8d95a8">earshot sound bank</text>
+    <rect x="720" y="130" width="198" height="160" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="740" y="166" font-size="20" font-weight="700" fill="#f5f6fa">Audition</text>
+    <text x="740" y="196" fill="#8d95a8">previews, frames,</text><text x="740" y="218" fill="#8d95a8">earshot rank / find,</text><text x="740" y="240" fill="#8d95a8">2-3 options to you</text>
+    <rect x="944" y="130" width="288" height="160" rx="14" fill="#161a23" stroke="#51cf66" stroke-width="2"/>
+    <text x="964" y="166" font-size="20" font-weight="700" fill="#f5f6fa">Download + log</text>
+    <text x="964" y="196" fill="#8d95a8">assets/sfx/openverse_eab8…wav</text><text x="964" y="222" font-family="'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14" fill="#8ce99a">credits.json</text><text x="964" y="246" fill="#8d95a8">source · licence · creator</text><text x="964" y="270" fill="#8d95a8">→ CREDITS.md for the post</text>
+  </g>
+  <text x="48" y="350" font-size="15" fill="#8d95a8">API keys live in env vars, never in files.  Non-commercial (NC) licences are filtered out by default.</text>
+</svg>

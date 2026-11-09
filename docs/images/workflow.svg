@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="520" rx="16" fill="#0f1115"/>
+  <text x="48" y="58" font-size="28" font-weight="800" fill="#f5f6fa">The order every job follows</text>
+  <text x="48" y="90" font-size="17" fill="#8d95a8">No step skipped. Steps 3 and 5 apply only when the job needs styling or outside assets.</text>
+  <!-- legend -->
+  <g font-size="15" fill="#b8bfd0">
+    <rect x="760" y="44" width="14" height="14" rx="3" fill="#4dabf7"/><text x="780" y="56">Read</text>
+    <rect x="840" y="44" width="14" height="14" rx="3" fill="#ffd43b"/><text x="860" y="56">Decide</text>
+    <rect x="932" y="44" width="14" height="14" rx="3" fill="#ff922b"/><text x="952" y="56">Make</text>
+    <rect x="1014" y="44" width="14" height="14" rx="3" fill="#51cf66"/><text x="1034" y="56">Prove</text>
+  </g>
+  <!-- connectors -->
+  <g stroke="#3a4152" stroke-width="3" fill="none">
+    <path d="M268 200 H292"/><path d="M500 200 H524"/><path d="M732 200 H756"/><path d="M964 200 H988"/>
+    <path d="M1092 270 V320 H164 V350" stroke-dasharray="6 6"/>
+    <path d="M268 420 H292"/><path d="M500 420 H524"/><path d="M732 420 H756"/><path d="M964 420 H988"/>
+  </g>
+  <!-- row 1 -->
+  <g>
+    <rect x="60" y="130" width="208" height="140" rx="14" fill="#161a23" stroke="#4dabf7" stroke-width="2"/>
+    <text x="80" y="168" font-size="30" font-weight="800" fill="#4dabf7">1</text><text x="80" y="204" font-size="20" font-weight="700" fill="#f5f6fa">Machine</text><text x="80" y="232" font-size="14" fill="#8d95a8">OS, GPU, RAM, disk,</text><text x="80" y="252" font-size="14" fill="#8d95a8">ffmpeg encoders</text>
+    <rect x="292" y="130" width="208" height="140" rx="14" fill="#161a23" stroke="#4dabf7" stroke-width="2"/>
+    <text x="312" y="168" font-size="30" font-weight="800" fill="#4dabf7">2</text><text x="312" y="204" font-size="20" font-weight="700" fill="#f5f6fa">Source</text><text x="312" y="232" font-size="14" fill="#8d95a8">codec, bit depth, HDR /</text><text x="312" y="252" font-size="14" fill="#8d95a8">log, frame rate, audio</text>
+    <rect x="524" y="130" width="208" height="140" rx="14" fill="#161a23" stroke="#ffd43b" stroke-width="2"/>
+    <text x="544" y="168" font-size="30" font-weight="800" fill="#ffd43b">3</text><text x="544" y="204" font-size="20" font-weight="700" fill="#f5f6fa">Style + font</text><text x="544" y="232" font-size="14" fill="#8d95a8">2-3 directions, then</text><text x="544" y="252" font-size="14" fill="#8d95a8">always ask the font</text>
+    <rect x="756" y="130" width="208" height="140" rx="14" fill="#161a23" stroke="#ffd43b" stroke-width="2"/>
+    <text x="776" y="168" font-size="30" font-weight="800" fill="#ffd43b">4</text><text x="776" y="204" font-size="20" font-weight="700" fill="#f5f6fa">Tool</text><text x="776" y="232" font-size="14" fill="#8d95a8">FFmpeg, HyperFrames,</text><text x="776" y="252" font-size="14" fill="#8d95a8">Remotion, Blender, NLE</text>
+    <rect x="988" y="130" width="208" height="140" rx="14" fill="#161a23" stroke="#ffd43b" stroke-width="2"/>
+    <text x="1008" y="168" font-size="30" font-weight="800" fill="#ffd43b">5</text><text x="1008" y="204" font-size="20" font-weight="700" fill="#f5f6fa">Assets</text><text x="1008" y="232" font-size="14" fill="#8d95a8">licensed music, SFX,</text><text x="1008" y="252" font-size="14" fill="#8d95a8">B-roll + credits ledger</text>
+  </g>
+  <!-- row 2 -->
+  <g>
+    <rect x="60" y="350" width="208" height="140" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="80" y="388" font-size="30" font-weight="800" fill="#ff922b">6</text><text x="80" y="424" font-size="20" font-weight="700" fill="#f5f6fa">Encode chain</text><text x="80" y="452" font-size="14" fill="#8d95a8">compress once, at the</text><text x="80" y="472" font-size="14" fill="#8d95a8">end, at source quality</text>
+    <rect x="292" y="350" width="208" height="140" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="312" y="388" font-size="30" font-weight="800" fill="#ff922b">7</text><text x="312" y="424" font-size="20" font-weight="700" fill="#f5f6fa">Colour</text><text x="312" y="452" font-size="14" fill="#8d95a8">HDR / SDR handled; log</text><text x="312" y="472" font-size="14" fill="#8d95a8">graded only on a yes</text>
+    <rect x="524" y="350" width="208" height="140" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="544" y="388" font-size="30" font-weight="800" fill="#ff922b">8</text><text x="544" y="424" font-size="20" font-weight="700" fill="#f5f6fa">Audio</text><text x="544" y="452" font-size="14" fill="#8d95a8">loudness, sync,</text><text x="544" y="472" font-size="14" fill="#8d95a8">earshot listening</text>
+    <rect x="756" y="350" width="208" height="140" rx="14" fill="#161a23" stroke="#ff922b" stroke-width="2"/>
+    <text x="776" y="388" font-size="30" font-weight="800" fill="#ff922b">9</text><text x="776" y="424" font-size="20" font-weight="700" fill="#f5f6fa">Delivery</text><text x="776" y="452" font-size="14" fill="#8d95a8">Reels, Shorts, YouTube,</text><text x="776" y="472" font-size="14" fill="#8d95a8">NLE hand-over, archive</text>
+    <rect x="988" y="350" width="208" height="140" rx="14" fill="#161a23" stroke="#51cf66" stroke-width="2"/>
+    <text x="1008" y="388" font-size="30" font-weight="800" fill="#51cf66">10</text><text x="1008" y="424" font-size="20" font-weight="700" fill="#f5f6fa">Verify</text><text x="1008" y="452" font-size="14" fill="#8d95a8">specs, bitrate, SSIM,</text><text x="1008" y="472" font-size="14" fill="#8d95a8">sync vs the source</text>
+  </g>
+</svg>

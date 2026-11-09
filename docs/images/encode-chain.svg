@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1280" height="460" rx="16" fill="#0f1115"/>
+  <text x="48" y="58" font-size="28" font-weight="800" fill="#f5f6fa">Why quality drops, and how this guide stops it</text>
+  <text x="48" y="90" font-size="17" fill="#8d95a8">Every lossy re-encode is a generation of loss. Defaults make it worse.</text>
+  <!-- bad row -->
+  <text x="48" y="150" font-size="18" font-weight="700" fill="#ff6b6b">Without it</text>
+  <g font-size="15">
+    <rect x="48" y="168" width="200" height="84" rx="12" fill="#161a23" stroke="#3a4152"/><text x="66" y="202" fill="#f5f6fa" font-weight="700">Camera file</text><text x="66" y="228" fill="#8d95a8">10-bit · high bitrate</text>
+    <rect x="300" y="168" width="200" height="84" rx="12" fill="#2a1719" stroke="#ff6b6b"/><text x="318" y="202" fill="#f5f6fa" font-weight="700">Cut + captions</text><text x="318" y="228" fill="#ff8787">CRF 23 · 8-bit</text>
+    <rect x="552" y="168" width="200" height="84" rx="12" fill="#2a1719" stroke="#ff6b6b"/><text x="570" y="202" fill="#f5f6fa" font-weight="700">Add graphics</text><text x="570" y="228" fill="#ff8787">re-encoded again</text>
+    <rect x="804" y="168" width="200" height="84" rx="12" fill="#2a1719" stroke="#ff6b6b"/><text x="822" y="202" fill="#f5f6fa" font-weight="700">Export</text><text x="822" y="228" fill="#ff8787">untagged · 128k audio</text>
+    <rect x="1056" y="168" width="176" height="84" rx="12" fill="#161a23" stroke="#3a4152"/><text x="1074" y="202" fill="#f5f6fa" font-weight="700">Platform</text><text x="1074" y="228" fill="#8d95a8">compresses again</text>
+  </g>
+  <g stroke="#ff6b6b" stroke-width="3"><path d="M250 210 H296"/><path d="M502 210 H548"/><path d="M754 210 H800"/><path d="M1006 210 H1052"/></g>
+  <g fill="#ff6b6b" font-size="13" font-weight="700"><text x="258" y="200">loss</text><text x="510" y="200">loss</text><text x="762" y="200">loss</text><text x="1014" y="200">loss</text></g>
+  <!-- good row -->
+  <text x="48" y="320" font-size="18" font-weight="700" fill="#51cf66">With it</text>
+  <g font-size="15">
+    <rect x="48" y="338" width="200" height="84" rx="12" fill="#161a23" stroke="#3a4152"/><text x="66" y="372" fill="#f5f6fa" font-weight="700">Camera file</text><text x="66" y="398" fill="#8d95a8">probed first</text>
+    <rect x="300" y="338" width="200" height="84" rx="12" fill="#14231a" stroke="#51cf66"/><text x="318" y="372" fill="#f5f6fa" font-weight="700">Edit in ProRes</text><text x="318" y="398" fill="#8ce99a">near-lossless, 10-bit</text>
+    <rect x="552" y="338" width="200" height="84" rx="12" fill="#14231a" stroke="#51cf66"/><text x="570" y="372" fill="#f5f6fa" font-weight="700">Graphics + alpha</text><text x="570" y="398" fill="#8ce99a">composited on original</text>
+    <rect x="804" y="338" width="200" height="84" rx="12" fill="#14231a" stroke="#51cf66"/><text x="822" y="372" fill="#f5f6fa" font-weight="700">One final encode</text><text x="822" y="398" fill="#8ce99a">CRF 17 · slow · tagged</text>
+    <rect x="1056" y="338" width="176" height="84" rx="12" fill="#14231a" stroke="#51cf66"/><text x="1074" y="372" fill="#f5f6fa" font-weight="700">Verified</text><text x="1074" y="398" fill="#8ce99a">checked vs source</text>
+  </g>
+  <g stroke="#51cf66" stroke-width="3"><path d="M250 380 H296"/><path d="M502 380 H548"/><path d="M754 380 H800"/><path d="M1006 380 H1052"/></g>
+  <g fill="#51cf66" font-size="13" font-weight="700"><text x="883" y="331">1 generation</text></g>
+</svg>
